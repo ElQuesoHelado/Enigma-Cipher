@@ -9,6 +9,7 @@ const std::string abecerotores[5] = { "EKMFLGDQVZNTOWYHXUSPAIBRCJ",
     "BDFHJLCPRTXVZNYEIWGAKMUSQO",
     "ESOVPZJAYQUIRHXLNFTGKDCMWB",
     "VZBRGITYUPSDNHLXAWMJQOFECK" };
+const std::string limites[5]={"R","F","W","K","A"};
 
 class Enigma {
 private:
@@ -16,11 +17,11 @@ private:
     int limizq, limmed, limder, posrizq, posrmed, posrder;
 
 public:
-    void getClave(int, int, int);
-    void getPosi(char, char, char);
-    void getLim(char, char, char);
+    void getRot(int, int, int);
+    void getPosi(std::string, std::string, std::string);
+    void getLim(std::string, std::string, std::string);
     void getMensaje(std::string);
-    void operar(char&, const std::string&, const std::string&, int);
+    void operar(std::string&, const std::string&, const std::string&, int);
     std::string execute();
     Enigma();
 };

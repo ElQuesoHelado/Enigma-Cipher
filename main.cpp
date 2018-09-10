@@ -4,14 +4,13 @@
 int main()
 {
     Enigma emisor;
-    emisor.getPosi('H', 'D', 'X');
-    emisor.getClave(1, 2, 3);
-    emisor.getLim('R', 'F', 'W');
-    //    emisor.getMensaje("CASA");
-    //    emisor.getMensaje("CAZA");
-    //    emisor.getMensaje("YAPA");
-    //    emisor.getMensaje("MURCIELAGO");
-    //    emisor.getMensaje("ABCDEFGHIJKLMZZQTXYQZSPPLMNXCVQ");
-    emisor.getMensaje("ABCDEFGHIJKLMZZQTXYQZSPPLMZZXXYY");
-    emisor.execute();
+
+    emisor.getPosi("A", "A", "A");
+
+    emisor.getRot(1, 2, 3);
+
+    emisor.getMensaje("VPKUW");
+
+    std::string cifrado = emisor.execute();
+    std::cout << "Cifrado: " << cifrado << std::endl;
 }
